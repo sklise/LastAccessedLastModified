@@ -1,0 +1,292 @@
+$ sklise@sk :: ~/ITP/S11_RWET/Observations (master)  
+> python observations.py 
+This is not BROOKLYN
+This is not ASTORIA
+This is not BRONX
+This is not BLACK RIVER FALL
+This is not BROOKLYN
+This is not RUDOLPH
+This is not BLACK RIVER FALL
+This is not TIPPECANOE
+This is not CHICAGO
+This is not BRONX
+This is not BLOOM CITY
+This is not BLOOM CITY
+This is not STATEN ISLAND
+This is not DODGE
+This is not BROOKLYN
+This is not STATEN ISLAND
+This is not BLOOM CITY
+This is not BLOOM CITY
+This is not DODGE
+This is not BRONX
+This is not BROOKLYN
+This is not DODGE
+This is not VICTORY
+This is not VICTORY
+This is not VICTORY
+This is not GAMBIER
+This is not ASTORIA
+This is not BLOOM CITY
+We are in NEW YORK
+
+
+$ sklise@sk :: ~/ITP/S11_RWET/Observations (master)  
+> python observations.py 
+This is not BROOKLYN
+We are in NEW YORK
+
+
+$ sklise@sk :: ~/ITP/S11_RWET/Observations (master)  
+> python observations.py 
+This is not BROOKLYN
+This is not BLACK RIVER FALL
+This is not DODGE
+This is not RUDOLPH
+This is not BRONX
+This is not BLOOM CITY
+This is not JUNCTION CITY
+This is not VICTORY
+This is not CHICAGO
+We are in NEW YORK
+
+
+$ sklise@sk :: ~/ITP/S11_RWET/Observations (master)  
+> python observations.py 
+This is not BROOKLYN
+    It would be Mostly Cloudy
+This is not CHICAGO
+    It would be Cloudy
+This is not VICTORY
+    It would be Cloudy
+This is not VICTORY
+    It would be Cloudy
+This is not ASTORIA
+    It would be Partly Cloudy
+This is not RUDOLPH
+    It would be Cloudy
+This is not TIPPECANOE
+    It would be Cloudy
+This is not VICTORY
+    It would be Cloudy
+This is not TIPPECANOE
+    It would be Cloudy
+This is not GAMBIER
+    It would be Light Rain
+This is not ASTORIA
+    It would be Partly Cloudy
+This is not STATEN ISLAND
+    It would be Cloudy
+This is not CHICAGO
+    It would be Cloudy
+This is not JUNCTION CITY
+    It would be Cloudy
+This is not DODGE
+    It would be Cloudy
+We are in NEW YORK
+
+
+$ sklise@sk :: ~/ITP/S11_RWET/Observations (master)  12:19 AM
+> python observations.py 
+This is not BROOKLYN
+    It would be Mostly Cloudy
+    Sunrise 5:50 am
+This is not BROOKLYN
+    It would be Mostly Cloudy
+    Sunrise 5:50 am
+This is not VICTORY
+    It would be Cloudy
+    Sunrise 5:55 am
+This is not DODGE
+    It would be Cloudy
+    Sunrise 5:55 am
+This is not ASTORIA
+    It would be Partly Cloudy
+    Sunrise 5:59 am
+This is not CHICAGO
+    It would be Cloudy
+    Sunrise 5:44 am
+This is not JUNCTION CITY
+    It would be Cloudy
+    Sunrise 5:46 am
+This is not ASTORIA
+    It would be Partly Cloudy
+    Sunrise 5:59 am
+This is not BLOOM CITY
+
+This is not TIPPECANOE
+    It would be Cloudy
+    Sunrise 6:22 am
+This is not STATEN ISLAND
+    It would be Cloudy
+    Sunrise 5:53 am
+This is not DODGE
+    It would be Cloudy
+    Sunrise 5:55 am
+This is not BLACK RIVER FALL
+    It would be Cloudy
+    Sunrise 5:53 am
+This is not JUNCTION CITY
+    It would be Cloudy
+    Sunrise 5:46 am
+This is not VICTORY
+    It would be Cloudy
+    Sunrise 5:55 am
+This is not VICTORY
+    It would be Cloudy
+    Sunrise 5:55 am
+This is not BLOOM CITY
+
+This is not WOOSTER
+    It would be Light Rain
+    Sunrise 6:22 am
+This is not GAMBIER
+    It would be Light Rain
+    Sunrise 6:27 am
+This is not DODGE
+    It would be Cloudy
+    Sunrise 5:55 am
+This is not BLOOM CITY
+
+This is not DODGE
+    It would be Cloudy
+    Sunrise 5:55 am
+This is not STATEN ISLAND
+    It would be Cloudy
+    Sunrise 5:53 am
+This is not ASTORIA
+    It would be Partly Cloudy
+    Sunrise 5:59 am
+This is not GAMBIER
+    It would be Light Rain
+    Sunrise 6:27 am
+This is not TIPPECANOE
+    It would be Cloudy
+    Sunrise 6:22 am
+This is not BLACK RIVER FALL
+    It would be Cloudy
+    Sunrise 5:53 am
+This is not RUDOLPH
+    It would be Cloudy
+    Sunrise 5:46 am
+This is not JUNCTION CITY
+    It would be Cloudy
+    Sunrise 5:46 am
+This is not BRONX
+    It would be Cloudy
+    Sunrise 5:50 am
+This is not BLOOM CITY
+
+This is not TIPPECANOE
+    It would be Cloudy
+    Sunrise 6:22 am
+This is not TIPPECANOE
+    It would be Cloudy
+    Sunrise 6:22 am
+This is not VICTORY
+    It would be Cloudy
+    Sunrise 5:55 am
+This is not WOOSTER
+    It would be Light Rain
+    Sunrise 6:22 am
+This is not RUDOLPH
+    It would be Cloudy
+    Sunrise 5:46 am
+This is not WOOSTER
+    It would be Light Rain
+    Sunrise 6:22 am
+This is not CHICAGO
+    It would be Cloudy
+    Sunrise 5:44 am
+This is not BLOOM CITY
+
+This is not JUNCTION CITY
+    It would be Cloudy
+    Sunrise 5:46 am
+This is not ASTORIA
+    It would be Partly Cloudy
+    Sunrise 5:59 am
+This is not DODGE
+    It would be Cloudy
+    Sunrise 5:55 am
+This is not ASTORIA
+    It would be Partly Cloudy
+    Sunrise 5:59 am
+This is not VICTORY
+    It would be Cloudy
+    Sunrise 5:55 am
+This is not BLOOM CITY
+
+This is not BLOOM CITY
+
+This is not WOOSTER
+    It would be Light Rain
+    Sunrise 6:22 am
+This is not BLOOM CITY
+
+This is not STATEN ISLAND
+    It would be Cloudy
+    Sunrise 5:53 am
+This is not GAMBIER
+    It would be Light Rain
+    Sunrise 6:27 am
+This is not VICTORY
+    It would be Cloudy
+    Sunrise 5:55 am
+This is not TIPPECANOE
+    It would be Cloudy
+    Sunrise 6:22 am
+This is not BLOOM CITY
+
+This is not DODGE
+    It would be Cloudy
+    Sunrise 5:55 am
+This is not WOOSTER
+    It would be Light Rain
+    Sunrise 6:22 am
+This is not CHICAGO
+    It would be Cloudy
+    Sunrise 5:44 am
+This is not DODGE
+    It would be Cloudy
+    Sunrise 5:55 am
+This is not STATEN ISLAND
+    It would be Cloudy
+    Sunrise 5:53 am
+This is not DODGE
+    It would be Cloudy
+    Sunrise 5:55 am
+This is not BLACK RIVER FALL
+    It would be Cloudy
+    Sunrise 5:53 am
+This is not CHICAGO
+    It would be Cloudy
+    Sunrise 5:44 am
+This is not RUDOLPH
+    It would be Cloudy
+    Sunrise 5:46 am
+This is not BRONX
+    It would be Cloudy
+    Sunrise 5:50 am
+This is not JUNCTION CITY
+    It would be Cloudy
+    Sunrise 5:46 am
+This is not BRONX
+    It would be Cloudy
+    Sunrise 5:50 am
+This is not JUNCTION CITY
+    It would be Cloudy
+    Sunrise 5:46 am
+This is not BROOKLYN
+    It would be Fair
+    Sunrise 5:50 am
+This is not VICTORY
+    It would be Cloudy
+    Sunrise 5:55 am
+This is not STATEN ISLAND
+    It would be Cloudy
+    Sunrise 5:53 am
+This is not CHICAGO
+    It would be Cloudy
+    Sunrise 5:44 am
+We are in NEW YORK
