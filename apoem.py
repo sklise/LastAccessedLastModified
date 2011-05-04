@@ -68,7 +68,7 @@ class Observe(object):
 			f = open("uptime.txt")
 			contents = f.read().split()
 			f.close()
-			return contents[2]+" day and "+contents[4][2:];
+			return contents[2]+" day and "+contents[4][:2];
 		except:
 			return "way too many"
 	
@@ -87,9 +87,15 @@ class Observe(object):
 			try: 
 				self.weather(loc)
 				if random.random() < .5:
-					self.output += "    It would be "+self.condition+"\n"
+					if random.random() < .5:
+						self.output += "    It would be "+self.condition+"\n"
+					else:
+						self.output += "    "+self.condition+" could be the weather we experience.\n"
 				else:
-					self.output += "    There the sun rises at"+self.sunrise+"\n"
+					if random.random() < .5:
+						self.output += "    There the sun rises at "+self.sunrise+"\n"
+					else:
+						self.output += "    Their sun will rise at "+self.sunrise+"\n"
 			except:
 				self.output +="\n"
 			self.whichcity(random.choice(zipcodes.keys()))
@@ -97,7 +103,7 @@ class Observe(object):
 			self.output += "Here we are in "+zipcodes[int(zipcode)]+"\n"
 			try:
 				self.weather(loc)
-				self.output += "    But the sun set at "+self.sunset+"\n"
+				self.output += "    It will get dark at "+self.sunset+"\n"
 			except:
 				self.output += "\n"
 	
@@ -126,11 +132,11 @@ if __name__ == '__main__':
 	c.addRule('G',['this is a poem\n','U'])
 	c.addRule('U',['I\'ve been awake for',poem.uptime(),'hours','T','\n'])
 	c.addRule('U',['It\'s been',poem.uptime(),' hours\n','T','\n'])
-	c.addRule('T',['It will be great'])
+	c.addRule('T',['This poem will be great'])
 	c.addRule('T',['The poem might','TR'])
 	c.addRule('TR',['sound funky.\n'])
 	c.addRule('TR',['inspire you.\n'])
-	c.addRule('TR',['revolutionize.\n'])
+	c.addRule('TR',['be a bore.\n'])
 	c.makegrammar('GP')
 	print ' '.join(c.expansion)
 	poem.whichcity(11222)
