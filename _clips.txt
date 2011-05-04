@@ -290,3 +290,56 @@ This is not CHICAGO
     It would be Cloudy
     Sunrise 5:44 am
 We are in NEW YORK
+
+
+$ sklise@sk :: ~/ITP/S11_RWET/Observations (master)  01:35 AM
+> python apoem.py 
+Good Evening
+ I wrote this I wrote this I wrote I wrote this is a poem
+ It's been 1 day and 29,  hours
+ It will be great 
+
+This is not BROOKLYN
+    There the sun rises at5:48 am
+This is not VICTORY
+    It would be Fair
+This is not BLACK RIVER FALL
+    There the sun rises at5:50 am
+This is not CHICAGO
+    There the sun rises at5:44 am
+This is not GAMBIER
+    It would be Fair
+This is not JUNCTION CITY
+    There the sun rises at5:44 am
+This is not BROOKLYN
+    It would be Cloudy
+This is not WOOSTER
+    It would be Cloudy
+This is not TIPPECANOE
+    It would be Cloudy
+This is not BROOKLYN
+    There the sun rises at5:48 am
+This is not BROOKLYN
+    There the sun rises at5:48 am
+This is not GAMBIER
+    There the sun rises at6:25 am
+This is not VICTORY
+    It would be Fair
+This is not STATEN ISLAND
+    It would be Cloudy
+This is not TIPPECANOE
+    It would be Cloudy
+This is not VICTORY
+    There the sun rises at5:53 am
+This is not GAMBIER
+    It would be Fair
+This is not BRONX
+    It would be Mostly Cloudy
+This is not WOOSTER
+    There the sun rises at6:20 am
+This is not STATEN ISLAND
+    It would be Cloudy
+This is not WOOSTER
+    There the sun rises at6:20 am
+Here we are in NEW YORK
+    But the sun set at 7:53 pm
