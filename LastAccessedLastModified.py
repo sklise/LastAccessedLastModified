@@ -4,10 +4,19 @@ from xml.dom import minidom
 import os, stat, random
 from datetime import datetime
 
-### Observations
-zipcode = "10003"
+#
+# Last Accessed Last Modified
+# Steven Klise <http://stevenklise.com>
+# Reading & Writing Electronic Text, 2011 <http://rwet.decontextualize.com>
+# Much help from Adam Parrish <http://decontextualize.com>
+#
 
-### Context Free Grammars => For when we aren't anywhere
+### Where is the computer?
+zipcode = "10003"
+### Where is this file?
+filepath = "/Users/sklise/ITP/S11_RWET/LastAccessedLastModified/apoem.py"
+
+### Context Free Grammars
 class ContextFree(object):
 	import random
 	"""Rules for a context free grammar."""
@@ -47,19 +56,25 @@ for line in zips:
 
 ### Observe class:: Where the poem is written.
 class Observe(object):
-	
+	"""What can the computer perceive of its surroundings?"""
 	def __init__(self):
-		self.fileinfo("/Users/sklise/ITP/S11_RWET/Observations")
+		self.fileinfo(filepath)
 		self.output = ""
 	
 	### File Info # http://leiqing.org/mirrors/python-2.7.1-docs-html/library/stat.html
 	def fileinfo(self,filepath):
 		st = os.stat(filepath)
-		accessed = datetime.fromtimestamp(st.st_atime)
-		modified = datetime.fromtimestamp(st.st_mtime)
+		self.accessed = datetime.fromtimestamp(st.st_atime)
+		self.modified = datetime.fromtimestamp(st.st_mtime)
 		self.groupread = bool(st.st_mode & stat.S_IRGRP) # Group has read permission.
 		self.groupwrite = bool(st.st_mode & stat.S_IWGRP) # Group has write permission.
 		self.groupexecute = bool(st.st_mode & stat.S_IXGRP) # Group has execute permission.
+
+	def access(self):
+		return "> Last accessed "+str(self.accessed)
+		
+	def read(self):
+		return "> Last modified "+str(self.modified)
 	
 	def uptime(self):
 		try:
@@ -83,24 +98,24 @@ class Observe(object):
 	def whichcity(self,loc):
 		
 		if loc != int(zipcode):
-			self.output += "This is not "+zipcodes[int(loc)]+"\n"
+			self.output += "# This is not "+zipcodes[int(loc)]+"\n"
 			try: 
 				self.weather(loc)
 				if random.random() < .5:
 					if random.random() < .5:
 						self.output += "    It would be "+self.condition+"\n"
 					else:
-						self.output += "    "+self.condition+" could be the weather we experience.\n"
+						self.output += "    "+self.condition+" would be the weather.\n"
 				else:
 					if random.random() < .5:
-						self.output += "    There the sun rises at "+self.sunrise+"\n"
+						self.output += "    There the sun rises at "+self.sunrise+".\n"
 					else:
-						self.output += "    Their sun will rise at "+self.sunrise+"\n"
+						self.output += "    Their sun will rise at "+self.sunrise+".\n"
 			except:
 				self.output +="\n"
 			self.whichcity(random.choice(zipcodes.keys()))
 		else:
-			self.output += "Here we are in "+zipcodes[int(zipcode)]+"\n"
+			self.output += "# Here we are in "+zipcodes[int(zipcode)]+"\n"
 			try:
 				self.weather(loc)
 				self.output += "    It will get dark at "+self.sunset+"\n"
@@ -122,22 +137,24 @@ if __name__ == '__main__':
 	poem = Observe()
 	c = ContextFree()
 	# I = intro {}
+	poem.output += poem.access()+"\n"
+	
 	c.addRule('I',['GP'])
-	c.addRule('GP',['Hi','GP'])
-	c.addRule('GP',['Hello','GP'])
-	c.addRule('GP',['Good Evening\n','G'])
-	c.addRule('GP',[poem.who(),'G'])
+	c.addRule('GP',['# login:\nHi','GP'])
+	c.addRule('GP',['# login:\nHello','GP'])
+	c.addRule('GP',['# login:\nGood Evening\n','G'])
 	c.addRule('G',['I wrote','G'])
 	c.addRule('G',['this','G'])
 	c.addRule('G',['this is a poem\n','U'])
-	c.addRule('U',['I\'ve been awake for',poem.uptime(),'hours','T','\n'])
+	c.addRule('U',['This computer has been awake for',poem.uptime(),'hours','T','\n'])
 	c.addRule('U',['It\'s been',poem.uptime(),' hours\n','T','\n'])
-	c.addRule('T',['This poem will be great'])
 	c.addRule('T',['The poem might','TR'])
-	c.addRule('TR',['sound funky.\n'])
-	c.addRule('TR',['inspire you.\n'])
-	c.addRule('TR',['be a bore.\n'])
+	c.addRule('TR',['be '+str(int(random.random()*15))+' lines.\n'])
+	c.addRule('TR',['consume '+str(int(random.random()*400))+' processes.\n'])
 	c.makegrammar('GP')
 	print ' '.join(c.expansion)
 	poem.whichcity(11222)
+	
+	poem.output += poem.read()
+	
 	print poem.output
